@@ -1,5 +1,6 @@
-print("Enter 2 numbers")
-num1=int(input())
-num2=int(input())
-sum=num1+num2
-print("sum :",sum)
+# Sum of all elements in a list.
+list = input("Enter a list:")
+list1=map(int,list.split())
+sum=0
+for i in list1:sum+=i
+print("The sum of all items in list ", list, "is", sum)
