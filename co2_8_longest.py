@@ -1,9 +1,17 @@
-lis=input("Enter a list with some string (space separated) :")
-words_list=lis.split()
-word_len = []
-for n in words_list:
-    word_len.append((len(n), n)
-word_len.sort()
-word_len.sort()
-print(word_len)
-print("Longest word:",word_len[-1][1], "and length=",word_len[-1][0])
+def longestLength(a):
+max1 = len(a[0])
+temp = a[0]
+
+# for loop to traverse the list
+for i in a:
+if(len(i) &gt; max1):
+
+max1 = len(i)
+temp = i
+
+print(&quot;The word with the longest length is:&quot;, temp,
+&quot; and length is &quot;, max1)
+
+# Driver Program
+a = [&quot;one&quot;, &quot;two&quot;, &quot;third&quot;, &quot;four&quot;]
+longestLength(a)
